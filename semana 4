@@ -1,0 +1,28 @@
+#AlGORITMO
+#1. Pedir el nombre al usuario .
+#2. Pedir la edad al usuario . 
+#3. pedir la ciudad del usuario . 
+#4. Mostrar el nombre. 
+#5. Mostrar la edad .
+#6. Mostrar la ciudad .
+#7. Comparar si la edad es mayor o igual a 18 .
+#8. Mostrar el resultado True o False 
+
+#PSEUDOCODIGO
+#INCIO
+    #LEER nombre 
+    #LEER edad
+    #LEER ciudad
+    #ESCRIBIR "hola, me llamo", nombre 
+    #ESCRIBIR "tengo", edad, "años"
+    #ESCRIBIR "soy de", ciudad
+    #ESCRIBIR "Es mayor de edad?" , edad>18
+#Fin
+
+name=input('Dime tu nombre:') 
+age=int(input('dame tu edad:'))
+City=input(input('donde vives?'))
+print('hola , me llamo', name)
+print("tengo", age,"años")
+print("soy de",City )
+print("es mayor de edad?",age>18)
