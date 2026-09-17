@@ -1,0 +1,43 @@
+package parcial.poo;
+
+
+public class Empleado {
+    private String nombre;
+    private String cargo;
+    private double salariobase;
+    private int añosexperiencia;
+    
+    public Empleado(String nombre, String cargo, double salariobase, int añosexperiencia){
+        this.nombre=nombre;
+        this.cargo=cargo;
+        this.salariobase=salariobase;
+        this.añosexperiencia=añosexperiencia;
+      
+    }
+    
+    public String VerDetelle () {
+        return "Nombre:" + this.nombre + "cargo" + this.cargo +  "salariobase" + this.salariobase +  "añosexperiencia" + this.añosexperiencia;
+       
+       }
+    
+     public String trabajar() {
+       int horas =6;
+
+
+
+
+
+package parcial.poo;
+
+
+public class ParcialPOO {
+
+    
+    public static void main(String[] args) {
+        Empleado jesus = new Empleado ("jesus", "gerente", 200000, 2);
+        jesus.VerDetelle();
+        jesus.trabajar();
+       
+    }
+    
+}
