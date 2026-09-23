@@ -1,0 +1,56 @@
+class empleado{
+    String nombre;
+    String cargo;
+    double salarioBase;
+    int añosExperiencia;
+
+    public empleado(String nombre , String cargo , double salarioBase , int añosExperiencia){
+        this.nombre=nombre;
+        this.cargo=cargo;
+        this.salarioBase=salarioBase;
+        this.añosExperiencia=añosExperiencia;
+    }
+
+     public String VerDaetalle(){
+        return "el empleado se llama "+ this.nombre+
+        "su cargo es:"+this.cargo+
+        "su salario es:"+this.salarioBase+
+        "los años de experiencia tiene:"+this.añosExperiencia;
+
+
+     }
+
+     public String trabajar(int horas){
+        return "el empleado llamado:"+this.nombre+
+        "trabaja:"+horas+"al dia";
+     }
+
+     public String TomarDescanso(){
+        return "el empleado "+this.nombre+" descansa 1H";
+     }
+
+     public String trabajaryDescansar(int horas){
+        String traba=this.trabajar(horas);
+        String descan=this.TomarDescanso();
+        return traba + descan;
+
+        
+
+     }
+
+}
+
+
+
+
+public class retroalimentacion{
+    public static void main(String[] args) {
+
+        empleado chatgpt=new empleado("chatgpt", "operario", 40000,3);
+
+
+
+       
+        
+    }
+}
